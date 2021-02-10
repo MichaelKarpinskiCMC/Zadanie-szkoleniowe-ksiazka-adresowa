@@ -1,14 +1,11 @@
 
 <head>
-
 <link rel="stylesheet" href="main.css">
 <h1> Książka Adresowa </h1>
 </head>
-
 <body style="background-color: grey; color: white">
 
 <?php
-
 require 'dbconnect.php';
 $polaczenie = mysqli_connect($host, $user, $pass, $db);
 if(!$polaczenie){
@@ -17,12 +14,9 @@ if(!$polaczenie){
 else{
     echo "Połączenie z bazą danych: uzyskane!</br></br>";
 }
-
 $zapytanie = "SELECT id, name, surname FROM osoby";
 $rezultat = $polaczenie->query($zapytanie);
 $ile_znalezionych = $rezultat->num_rows;
-
-
 for ($i=0; $i <$ile_znalezionych; $i++)
         {
                 $wiersz = $rezultat->fetch_assoc();
@@ -31,17 +25,9 @@ for ($i=0; $i <$ile_znalezionych; $i++)
                 echo $osoba;
                 echo '</a>';
         }
-
 ?>
 </br><br />
 <a style="color: #39a5f1" href= 'rejestr.php'> DODAJ OSOBĘ DO BAZY </a>
 </br><br /></br><br />
-
-
 </form>
-
-
 </body>
-
-
-
