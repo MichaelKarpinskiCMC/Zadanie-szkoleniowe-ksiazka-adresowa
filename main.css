@@ -1,12 +1,10 @@
-
 body
 {
     background-color: grey; 
     font-size: 28px;
     text-decoration: none;
     text-align: center;
-    color: #fff;
-    
+    color: #fff;    
 }
 a:link 
 {
@@ -32,4 +30,3 @@ h1
 	letter-spacing: 10px;
 	text-transform: uppercase;
 }
-
