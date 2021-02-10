@@ -26,6 +26,7 @@ for ($i=0; $i <$ile_znalezionych; $i++)
                 echo '</a>';
         }
 ?>
+    
 </br><br />
 <a style="color: #39a5f1" href= 'rejestr.php'> DODAJ OSOBĘ DO BAZY </a>
 </br><br /></br><br />
